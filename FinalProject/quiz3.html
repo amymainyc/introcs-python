@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stuyfeed Quiz 3</title>
+
+<style>
+
+.container {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 340px;
+}
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier New';
+}
+.containerq {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 700px;
+}
+
+.slidecontainer {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #9cddff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #9cddff;
+  cursor: pointer;
+}
+body {
+  background-color: #D3F0FF;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttonmain {
+  background-color: #ffffff00;
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+
+<br><br>
+<a href="http://moe.stuy.edu/~amai20/stuyfeed/stuyfeed.html" class="buttonmain">
+  <h1>STUYFEED</h1>
+</a>
+
+<br>
+
+<!--formstart-->
+<form action="quiz3.py">
+
+<ul class="no-bullets">
+  <li style="float:center"> 
+    <div class="container">
+      <br>
+      <p style="font-family:'Courier New'">Rate These Foods And <br>We'll Tell You The Age Of <br>Your Taste Buds</p>
+      <br>
+    </div>
+    <br>
+    <br>
+  </li>
+  
+<!--question1-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Rate this pizza:
+        <br><br>
+        <img src="https://i.imgur.com/YzMGT3I.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q1" id="q1">
+          <br>
+          <label for="q1" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question2-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How do you feel about blue cheese?
+        <br><br>
+        <img src="https://i.imgur.com/h1VCnTB.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="75" value="40" class="slider" name="q2" id="q2">
+          <br>
+          <label for="q2" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question3-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Salivating over chicken nuggets?
+        <br><br>
+        <img src="https://i.imgur.com/CaeJap1.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q3" id="q3">
+          <br>
+          <label for="q3" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question4-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How about coffee?
+        <br><br>
+        <img src="https://i.imgur.com/uRlA6ys.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q4" id="q4">
+          <br>
+          <label for="q4" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question5-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Want a basket of french fries too?
+        <br><br>
+        <img src="https://i.imgur.com/TgBBe3v.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q5" id="q5">
+          <br>
+          <label for="q5" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question6-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How about some kale salad?
+        <br><br>
+        <img src="https://i.imgur.com/rL02mvU.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="65" value="35" class="slider" name="q6" id="q6">
+          <br>
+          <label for="q6" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question7-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Do you like mac and cheese?
+        <br><br>
+        <img src="https://i.imgur.com/nrXoWVK.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q7" id="q7">
+          <br>
+          <label for="q7" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question8-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How do you feel about olives?
+        <br><br>
+        <img src="https://i.imgur.com/wIBHWfm.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q8" id="q8">
+          <br>
+          <label for="q8" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question9-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Oysters?
+        <br><br>
+        <img src="https://i.imgur.com/C4wBgzB.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="1" max="41" value="41" class="slider" name="q9" id="q9">
+          <br>
+          <label for="q9" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question10-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How about some PB&J?
+        <br><br>
+        <img src="https://i.imgur.com/nbw7nQn.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q10" id="q10">
+          <br>
+          <label for="q10" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question11-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Do you like quinoa?
+        <br><br>
+        <img src="https://i.imgur.com/JCEOWkf.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q11" id="q11">
+          <br>
+          <label for="q11" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question12-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        What do you think of plain white rice?
+        <br><br>
+        <img src="https://i.imgur.com/k6ooaiE.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q12" id="q12">
+          <br>
+          <label for="q12" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question13-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        How about some scrambled eggs?
+        <br><br>
+        <img src="https://i.imgur.com/NvpSvRE.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="55" value="30" class="slider" name="q13" id="q13">
+          <br>
+          <label for="q13" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question14-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        Would you like some smoked salmon?
+        <br><br>
+        <img src="https://i.imgur.com/PR6UzD1.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="35" value="20" class="slider" name="q14" id="q14">
+          <br>
+          <label for="q14" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question15-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        What about tofu?
+        <br><br>
+        <img src="https://i.imgur.com/K27A8IU.jpg" height="400" width="600">
+        <br><br>
+        <div class="slidecontainer">
+  		  <input type="range" min="5" max="35" value="20" class="slider" name="q15" id="q15">
+          <br>
+          <label for="q15" style="font-family:'Courier New'">Ew! &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Meh. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gimme!</label>
+		</div>
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+
+  
+  
+  
+  <input type="submit" value="Submit"class="containerbut">
+  
+</ul>
+
+</form>
+<!--formend-->
+
+<script>
+</script>
+
+
+</body>
+</html>
+

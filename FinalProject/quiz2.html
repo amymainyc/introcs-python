@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stuyfeed Quiz 2</title>
+
+<style>
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container2 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 340px;
+}
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier New';
+}
+.containera {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 500px;
+  background-color: white;
+}
+.containerq {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 700px;
+}
+
+input[type=text], select {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Courier New';
+}
+
+h2,h3 {
+  text-align: left;
+}
+
+body {
+  background-color: #D3F0FF;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.solid {
+  border-style: solid;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+a.button:hover{
+     background: #E9E9E9;
+}
+.buttonmain {
+  background-color: #ffffff00;
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+
+<br><br>
+<a href="http://moe.stuy.edu/~amai20/stuyfeed/stuyfeed.html" class="buttonmain">
+  <h1>STUYFEED</h1>
+</a>
+
+<br>
+
+<!--formstart-->
+<form action="quiz2.py">
+
+<ul class="no-bullets">
+  <li style="float:center"> 
+    <div class="container2">
+      <br>
+      <p style="font-family:'Courier New'">Can You Guess These States <br>By Their Landmark?</p>
+      <br>
+    </div>
+    <br>
+    <br>
+  </li>
+  
+<!--question1-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        1. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/EcPiJrN.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q1">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question2-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        2. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/H0VMlHU.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q2">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question3-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        3. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/Mm32APp.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q3">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question4-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        4. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/PlsR72s.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q4">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question5-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        5. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/kBRrBAg.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q5">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question6-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        6. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/oCa6rCD.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q6">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question7-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        7. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/Ilwn33d.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q7">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question8-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        8. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/MvbBYwd.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q8">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question9-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        9. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/NyflA77.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q9">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question10-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        10. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/ck9me4a.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q10">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question11-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        11. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/928oJon.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q11">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question12-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        12. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/NJaAetW.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q12">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question13-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        13. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/wC6s8Vf.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q13">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question14-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        14. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/ztTm25Q.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q14">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+<!--question15-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">
+        15. What state is this in?
+        <br><br>
+        <img src="https://i.imgur.com/nQ0xF5C.jpg" height="400" width="600">
+        <br><br>
+        <input type="text" name="q15">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+
+  
+  
+  
+  <input type="submit" value="Submit"class="containerbut">
+  
+</ul>
+
+</form>
+<!--formend-->
+
+
+<script>
+</script>
+
+
+</body>
+</html>
+

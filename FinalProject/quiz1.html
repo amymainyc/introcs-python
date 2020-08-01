@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stuyfeed Quiz 1</title>
+
+<style>
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container2 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 340px;
+}
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier New';
+}
+.containera {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 500px;
+  background-color: white;
+}
+.containerq {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 500px;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: black;
+  font-family: 'Courier New';
+  text-align: left;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #D3F0FF;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #c2eaff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+    opacity: 0;
+}
+
+h2,h3 {
+  text-align: left;
+}
+
+body {
+  background-color: #D3F0FF;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.solid {
+  border-style: solid;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+a.button:hover{
+     background: #E9E9E9;
+}
+.buttonmain {
+  background-color: #ffffff00;
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+
+<br><br>
+<a href="http://moe.stuy.edu/~amai20/stuyfeed/stuyfeed.html" class="buttonmain">
+  <h1>STUYFEED</h1>
+</a>
+
+<br>
+
+<!--formstart-->
+<form action="quiz1.py">
+
+<ul class="no-bullets">
+  <li style="float:center"> 
+    <div class="container2">
+      <br>
+      <p style="font-family:'Courier New'">Can You Pass This Basic <br>High School Quiz?</p>
+      <br>
+    </div>
+    <br>
+    <br>
+  </li>
+  
+<!--question1-->
+  <li style="float:center"> 
+    <div class="containerq" id="q1">
+      <br><br>
+      <p style="font-family:'Courier New'">1. Solve for X: 2x + 3 = 21</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">6
+        <input type="radio" name="q1" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">7
+        <input type="radio" name="q1" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">8
+        <input type="radio" name="q1" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">9
+        <input type="radio" name="q1" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question2-->
+  <li style="float:center"> 
+    <div class="containerq" id="q2">
+      <br><br>
+      <p style="font-family:'Courier New'">2. World War II spanned across which set of years?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">1939-1945
+        <input type="radio" name="q2" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">1914-1918
+        <input type="radio" name="q2" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">1932-1945
+        <input type="radio" name="q2" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">1921-1936
+        <input type="radio" name="q2" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question3-->
+  <li style="float:center"> 
+    <div class="containerq" id="q3">
+      <br><br>
+      <p style="font-family:'Courier New'">3. Which continent is the largest?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Australia
+        <input type="radio" name="q3" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Asia
+        <input type="radio" name="q3" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Russia
+        <input type="radio" name="q3" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Europe
+        <input type="radio" name="q3" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question4-->
+  <li style="float:center"> 
+    <div class="containerq" id="q4">
+      <br><br>
+      <p style="font-family:'Courier New'">4. Forest is to tree as tree is to...</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Leaf
+        <input type="radio" name="q4" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Squirrel
+        <input type="radio" name="q4" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Banana
+        <input type="radio" name="q4" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Soil
+        <input type="radio" name="q4" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question5-->
+  <li style="float:center"> 
+    <div class="containerq" id="q5">
+      <br><br>
+      <p style="font-family:'Courier New'">5. Who wrote The Great Gatsby?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Ernest Hemingway
+        <input type="radio" name="q5" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Hunter S. Thompson
+        <input type="radio" name="q5" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">F. Scott Fitzgerald
+        <input type="radio" name="q5" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Charles Dickens
+        <input type="radio" name="q5" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question6-->
+  <li style="float:center"> 
+    <div class="containerq" id="q6">
+      <br><br>
+      <p style="font-family:'Courier New'">6. How many teaspoons are in a tablespoon?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">2
+        <input type="radio" name="q6" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">3
+        <input type="radio" name="q6" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">4
+        <input type="radio" name="q6" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">6
+        <input type="radio" name="q6" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question7-->
+  <li style="float:center"> 
+    <div class="containerq" id="q7">
+      <br><br>
+      <p style="font-family:'Courier New'">7. Which of these is considered <br>the powerhouse of the cell?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Cytoplasm
+        <input type="radio" name="q7" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Nucleolus
+        <input type="radio" name="q7" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Golgi Apparatus
+        <input type="radio" name="q7" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Mitochondria
+        <input type="radio" name="q7" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question8-->
+  <li style="float:center"> 
+    <div class="containerq" id="q8">
+      <br><br>
+      <p style="font-family:'Courier New'">8. You have to run a 5k. How much is that in miles?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">5
+        <input type="radio" name="q8" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">4
+        <input type="radio" name="q8" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">3.1
+        <input type="radio" name="q8" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">4.8
+        <input type="radio" name="q8" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question9-->
+  <li style="float:center"> 
+    <div class="containerq" id="q9">
+      <br><br>
+      <p style="font-family:'Courier New'">9. Who painted this?
+      <br>
+      <img src="https://i.imgur.com/SzRoUIM.jpg">
+      </p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Johannes Vermeer
+        <input type="radio" name="q9" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Vincent van Gogh
+        <input type="radio" name="q9" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Claude Monet
+        <input type="radio" name="q9" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Henri Matisse
+        <input type="radio" name="q9" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question10-->
+  <li style="float:center"> 
+    <div class="containerq" id="q10">
+      <br><br>
+      <p style="font-family:'Courier New'">10. What percentage of the Earth is covered by water?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">71%
+        <input type="radio" name="q10" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">73%
+        <input type="radio" name="q10" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">75%
+        <input type="radio" name="q10" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">77%
+        <input type="radio" name="q10" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question11-->
+  <li style="float:center"> 
+    <div class="containerq" id="q11">
+      <br><br>
+      <p style="font-family:'Courier New'">11. Before lunch you find $20. What do you do with it?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Quickly pick it up before anyone sees it.
+        <input type="radio" name="q11" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Use it to buy your lunch for the day.
+        <input type="radio" name="q11" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Turn it into the office.
+        <input type="radio" name="q11" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Ask around if anyone lost $20.
+        <input type="radio" name="q11" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question12-->
+  <li style="float:center"> 
+    <div class="containerq" id="q12">
+      <br><br>
+      <p style="font-family:'Courier New'">12. Which of the following conditions on Mars would be the first to kill a human who is unprotected and unassisted by life support??</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Colder than Antarctic temperatures
+        <input type="radio" name="q12" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Low air pressure
+        <input type="radio" name="q12" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">High CO2 atmosphere
+        <input type="radio" name="q12" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Excess solar radiation
+        <input type="radio" name="q12" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question13-->
+  <li style="float:center"> 
+    <div class="containerq" id="q13">
+      <br><br>
+      <p style="font-family:'Courier New'">13. Table salt NaCl is made from:</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">Two unreactive nonmetals
+        <input type="radio" name="q13" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two highly reactive metals
+        <input type="radio" name="q13" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">A highly reactive metal and a toxic gas
+        <input type="radio" name="q13" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Two toxic gases
+        <input type="radio" name="q13" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question14-->
+  <li style="float:center"> 
+    <div class="containerq" id="q14">
+      <br><br>
+      <p style="font-family:'Courier New'">14. If two chickens lay two eggs in two days, how long does it take 100 chickens to lay 100 eggs?</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">1 day
+        <input type="radio" name="q14" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">2 days
+        <input type="radio" name="q14" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">100 days
+        <input type="radio" name="q14" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Cannot be answered with the given information
+        <input type="radio" name="q14" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question15-->
+  <li style="float:center"> 
+    <div class="containerq" id="q15">
+      <br><br>
+      <p style="font-family:'Courier New'">15. If the Sun is a basketball, then Earth is:</p>
+      <br><br>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div class="containera">
+    <br>
+      <label class="container">A tennis ball, 1 meter (3 feet) away
+        <input type="radio" name="q15" value="A">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">A walnut, 3 meters (10 feet) away
+        <input type="radio" name="q15" value="B">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">A pea, 6 meters (20 feet) away
+        <input type="radio" name="q15" value="C">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">A fruit fly, 25 meters (85 feet) away
+        <input type="radio" name="q15" value="D">
+      <span class="checkmark"></span>
+      </label>
+      <br>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <input type="submit" value="Submit"class="containerbut">
+  
+</ul>
+
+</form>
+<!--formend-->
+
+
+<script>
+</script>
+
+
+</body>
+</html>
+

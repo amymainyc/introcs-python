@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stuyfeed Quiz 4</title>
+
+<style>
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container2 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 340px;
+}
+.container3 {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+input[type=submit] {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Courier New';
+}
+.containera {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 500px;
+  background-color: white;
+}
+.containerq {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
+  color: black;
+  width: 500px;
+}
+
+h2,h3 {
+  text-align: left;
+}
+
+body {
+  background-color: #D3F0FF;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+a.button:hover{
+     background: #E9E9E9;
+}
+.buttonmain {
+  background-color: #ffffff00;
+  border: none;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#rad {
+    margin:4px;
+}
+
+#rad label {
+    width:40px;
+    margin:0px;
+    overflow:auto;
+}
+
+#rad label span {
+    text-align:center;
+    font-size: 32px;
+    padding:20px 20px;
+    display:block;
+    background-color: #FFFFFF
+}
+#rad label input {
+    position:fixed;
+    top:-20px;
+}
+#rad input:checked + span {
+    background-color:#AFCBDC;
+    color:#F7F7F7;
+}
+
+</style>
+</head>
+<body>
+
+<br><br>
+<a href="http://moe.stuy.edu/~amai20/stuyfeed/stuyfeed.html" class="buttonmain">
+  <h1>STUYFEED</h1>
+</a>
+
+<br>
+
+<!--formstart-->
+<form action="quiz4.py">
+
+<ul class="no-bullets">
+  <li style="float:center"> 
+    <div class="container2">
+      <br>
+      <p style="font-family:'Courier New'">Choose Some Pictures <br>And We'll Recommend Your <br>Next Travel Destination</p>
+      <br>
+    </div>
+    <br>
+    <br>
+  </li>
+  
+<!--question1-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q1" value="S">
+            <span>
+              <img src="https://i.imgur.com/plM1UCD.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q1" value="W">
+            <span>
+              <img src="https://i.imgur.com/rlI0KXP.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q1" value="D">
+            <span>
+              <img src="https://i.imgur.com/KqpKFPx.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q1" value="F">
+            <span>
+              <img src="https://i.imgur.com/XRYuEhR.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question2-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q2" value="D">
+            <span>
+              <img src="https://i.imgur.com/bfn9LDt.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q2" value="W">
+            <span>
+              <img src="https://i.imgur.com/8RfcrDN.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q2" value="S">
+            <span>
+              <img src="https://i.imgur.com/azSVbQj.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q2" value="F">
+            <span>
+              <img src="https://i.imgur.com/FogEBCN.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question3-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q3" value="W">
+            <span>
+              <img src="https://i.imgur.com/SVfoJdP.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q3" value="F">
+            <span>
+              <img src="https://i.imgur.com/avsSZK7.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q3" value="D">
+            <span>
+              <img src="https://i.imgur.com/3ZSPgFf.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q3" value="S">
+            <span>
+              <img src="https://i.imgur.com/Cy1l9BR.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question4-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q4" value="S">
+            <span>
+              <img src="https://i.imgur.com/VBVsPrC.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q4" value="D">
+            <span>
+              <img src="https://i.imgur.com/paoSPUO.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q4" value="F">
+            <span>
+              <img src="https://i.imgur.com/0Kt135b.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q4" value="W">
+            <span>
+              <img src="https://i.imgur.com/TQ9YMU6.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question5-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q5" value="F">
+            <span>
+              <img src="https://i.imgur.com/V1qawOI.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q5" value="S">
+            <span>
+              <img src="https://i.imgur.com/kFgMHlz.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q5" value="W">
+            <span>
+              <img src="https://i.imgur.com/P0kRZUF.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q5" value="D">
+            <span>
+              <img src="https://i.imgur.com/r0FaZrq.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question6-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q6" value="D">
+            <span>
+              <img src="https://i.imgur.com/TE1W5Z0.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q6" value="W">
+            <span>
+              <img src="https://i.imgur.com/y4tClwI.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q6" value="F">
+            <span>
+              <img src="https://i.imgur.com/fphNTYF.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q6" value="S">
+            <span>
+              <img src="https://i.imgur.com/ZutwC1y.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question7-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q7" value="F">
+            <span>
+              <img src="https://i.imgur.com/61IQnxT.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q7" value="S">
+            <span>
+              <img src="https://i.imgur.com/4wKJgOm.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q7" value="W">
+            <span>
+              <img src="https://i.imgur.com/RMuwtua.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q7" value="D">
+            <span>
+              <img src="https://i.imgur.com/2AWT6Iu.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <!--question8-->
+  <li style="float:center"> 
+    <div class="containerq">
+      <p style="font-family:'Courier New'">
+        Choose a picture:
+      </p>
+    </div>
+  </li>
+  
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q8" value="S">
+            <span>
+              <img src="https://i.imgur.com/ZHVP5Vt.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q8" value="W">
+            <span>
+              <img src="https://i.imgur.com/mG8EPM0.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <li style="float:center">
+    <div id="rad">
+      <div class="container3">
+        <label>
+          <input type="radio" name="q8" value="D">
+            <span>
+              <img src="https://i.imgur.com/3SdHJJd.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+      <div class="container3">
+        <label>
+          <input type="radio" name="q8" value="F">
+            <span>
+              <img src="https://i.imgur.com/qvXQ5Ub.jpg" width="300" height="200">
+            </span>
+        </label>
+      </div>
+    </div>
+  </li>
+  <br><br><br><br><br>
+  
+  <input type="submit" value="Submit"class="containerbut">
+  
+</ul>
+
+</form>
+<!--formend-->
+
+
+<script>
+</script>
+
+
+</body>
+</html>
+
